@@ -1,9 +1,6 @@
 const express = require("express");
 const router = express.Router();
-// Import model
 const burger = require("../models/burger.js");
-
-// -- Setup routes --
 
 router.get("/", function(req,res){
     burger.selectAll(function (data){
